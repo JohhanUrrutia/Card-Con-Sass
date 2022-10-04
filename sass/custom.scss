@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+$font-family-base: 'Poppins', sans-serif;
+
+$primary:       #0d6efd;
+$secondary:     #6c757d;
+$success:       #198754;
+$info:          #0dcaf0;
+$warning:       #ffc107;
+$danger:        #dc3545;
+$light:         #f8f9fa;
+$dark:          #212529;
+$purple:        #cf649a;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "purple": $purple,
+  "dark":       $dark
+);
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.botonUno{
+    font-weight: 500;
+    background-color: $purple;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.card-dos{
+    @extend .card;
+    background-color: $dark;
+    padding: 2rem;
+}
+
